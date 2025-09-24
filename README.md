@@ -1,73 +1,68 @@
-# React + TypeScript + Vite
+# MENAA at De Anza - Official Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, mobile-first website for the Middle East & North Africa Association at De Anza College.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Responsive Design**: Mobile-first approach with beautiful animations
+- **Dark Mode Support**: Automatic dark/light mode with user preference saving
+- **Modern Tech Stack**: Built with React, Vite, TailwindCSS, and shadcn/ui
+- **Interactive Elements**: Smooth animations powered by Framer Motion
+- **QR Code Sharing**: Easy website sharing with QR code generation
+- **Cultural Design**: MENA-inspired geometric patterns and color schemes
 
-## React Compiler
+## Sections
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+1. **Hero Section**: Welcome banner with cultural background patterns
+2. **About Us**: Mission and community information
+3. **Quick Links**: Social media and registration links (Instagram, Discord, Member Form)
+4. **Upcoming Events**: Showcase of club events and activities
+5. **QR Code Section**: Easy sharing functionality
+6. **Footer**: Contact information and social links
 
-## Expanding the ESLint configuration
+## Tech Stack
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- **Frontend**: React 18 with TypeScript
+- **Build Tool**: Vite
+- **Styling**: TailwindCSS + shadcn/ui components
+- **Icons**: Lucide React
+- **Animations**: Framer Motion
+- **QR Codes**: qrcode.react
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## Getting Started
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+1. Install dependencies:
+   \`\`\`bash
+   npm install
+   \`\`\`
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+2. Start the development server:
+   \`\`\`bash
+   npm run dev
+   \`\`\`
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+3. Open [http://localhost:5173](http://localhost:5173) in your browser
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## Customization
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+### Content Updates
+- **About Section**: Update the mission text in `src/components/About.tsx`
+- **Events**: Modify the events array in `src/components/Events.tsx`
+- **Social Links**: Update URLs in `src/components/Links.tsx` and `src/components/Footer.tsx`
+
+### Styling
+- **Colors**: Modify the gradient colors in `src/index.css` and component files
+- **Patterns**: Update the geometric SVG pattern in `src/components/Hero.tsx`
+
+## Deployment
+
+Build the project for production:
+\`\`\`bash
+npm run build
+\`\`\`
+
+The built files will be in the `dist/` directory, ready for deployment to any static hosting service.
+
+## License
+
+© 2025 Middle East & North Africa Association at De Anza College
