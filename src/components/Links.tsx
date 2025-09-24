@@ -28,7 +28,7 @@ const links = [
 
 export default function Links() {
   return (
-    <section className="py-20 px-4 bg-muted/30">
+    <section className="py-20 px-4 bg-gray-50 dark:bg-gray-800">
       <div className="max-w-4xl mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 50 }}
@@ -54,7 +54,7 @@ export default function Links() {
                 <Button
                   asChild
                   variant="outline"
-                  className="w-full h-auto p-6 rounded-2xl border-2 bg-card hover:shadow-lg transition-all duration-300"
+                  className="w-full h-auto p-6 rounded-2xl border-2 bg-white dark:bg-gray-900 hover:shadow-lg transition-all duration-300"
                 >
                   <a
                     href={link.href}
@@ -67,15 +67,15 @@ export default function Links() {
                     </div>
                     
                     <div className="space-y-2">
-                      <h3 className="font-semibold text-lg text-foreground group-hover:text-primary transition-colors">
+                      <h3 className="font-semibold text-lg text-gray-900 dark:text-gray-100 group-hover:text-orange-600 transition-colors">
                         {link.title}
                       </h3>
-                      <p className="text-sm text-muted-foreground">
+                      <p className="text-sm text-gray-600 dark:text-gray-400">
                         {link.description}
                       </p>
                     </div>
                     
-                    <ExternalLink size={16} className="text-muted-foreground group-hover:text-primary transition-colors" />
+                    <ExternalLink size={16} className="text-gray-600 dark:text-gray-400 group-hover:text-orange-600 transition-colors" />
                   </a>
                 </Button>
               </motion.div>

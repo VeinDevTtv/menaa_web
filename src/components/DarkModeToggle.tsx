@@ -26,7 +26,7 @@ export default function DarkModeToggle() {
       variant="ghost"
       size="icon"
       onClick={toggleDarkMode}
-      className="fixed top-4 right-4 z-50 rounded-full bg-background/80 backdrop-blur-sm shadow-lg hover:shadow-xl transition-all duration-300"
+      className="fixed top-4 right-4 z-50 rounded-full bg-white/80 dark:bg-gray-900/80 backdrop-blur-sm shadow-lg hover:shadow-xl transition-all duration-300"
     >
       {isDark ? (
         <Sun className="h-5 w-5 text-amber-500" />

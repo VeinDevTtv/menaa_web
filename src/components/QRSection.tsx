@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion'
 import { useState } from 'react'
-import QRCode from 'qrcode.react'
+import { QRCodeSVG } from 'qrcode.react'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
 import { Button } from '@/components/ui/button'
 import { Copy, Check, Share2 } from 'lucide-react'
@@ -51,7 +51,7 @@ export default function QRSection() {
                 viewport={{ once: true }}
                 className="p-4 bg-white rounded-xl shadow-inner"
               >
-                <QRCode
+                <QRCodeSVG
                   value={websiteUrl}
                   size={200}
                   bgColor="#ffffff"

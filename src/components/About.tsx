@@ -3,7 +3,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/com
 
 export default function About() {
   return (
-    <section className="py-20 px-4 bg-background">
+    <section className="py-20 px-4 bg-white dark:bg-gray-900">
       <div className="max-w-4xl mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 50 }}
@@ -18,13 +18,13 @@ export default function About() {
           <div className="grid md:grid-cols-2 gap-8 items-center">
             <Card className="rounded-2xl shadow-lg border-0 bg-gradient-to-br from-amber-50 to-orange-50 dark:from-amber-950/20 dark:to-orange-950/20">
               <CardHeader>
-                <CardTitle className="text-2xl text-foreground">Our Mission</CardTitle>
-                <CardDescription className="text-muted-foreground text-base">
+                <CardTitle className="text-2xl text-gray-900 dark:text-gray-100">Our Mission</CardTitle>
+                <CardDescription className="text-gray-600 dark:text-gray-400 text-base">
                   Building bridges across cultures
                 </CardDescription>
               </CardHeader>
               <CardContent>
-                <p className="text-foreground leading-relaxed">
+                <p className="text-gray-900 dark:text-gray-100 leading-relaxed">
                   The Middle East & North Africa Association at De Anza College is dedicated to 
                   fostering cultural understanding, celebrating our rich heritage, and creating 
                   an inclusive space for students from all backgrounds. We organize cultural events, 
