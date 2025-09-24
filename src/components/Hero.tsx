@@ -28,7 +28,7 @@ export default function Hero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, ease: "easeOut" }}
         >
-          <h1 className="text-5xl md:text-7xl font-bold bg-gradient-to-r from-amber-700 via-orange-700 to-red-700 bg-clip-text text-transparent mb-6">
+          <h1 className="text-5xl md:text-7xl font-bold bg-gradient-to-r from-amber-600 via-orange-600 to-red-600 bg-clip-text text-transparent mb-6 drop-shadow-lg">
             MENAA at De Anza
           </h1>
           
@@ -36,7 +36,7 @@ export default function Hero() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.3, ease: "easeOut" }}
-            className="text-xl md:text-2xl text-muted-foreground mb-8 font-light"
+            className="text-xl md:text-2xl text-gray-600 dark:text-gray-300 mb-8 font-light"
           >
             Connecting cultures, building community.
           </motion.p>
@@ -45,9 +45,14 @@ export default function Hero() {
             initial={{ opacity: 0, scale: 0.8 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.6, delay: 0.6, ease: "easeOut" }}
-            className="flex justify-center"
+            className="flex flex-col items-center space-y-6"
           >
             <div className="w-24 h-1 bg-gradient-to-r from-amber-500 to-orange-500 rounded-full" />
+            
+            {/* Test Button to Verify Styles */}
+            <button className="px-8 py-3 bg-gradient-to-r from-amber-500 to-orange-500 text-white font-semibold rounded-2xl shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300 border-2 border-amber-400">
+              🎉 Styles Working! 🎉
+            </button>
           </motion.div>
         </motion.div>
       </div>
